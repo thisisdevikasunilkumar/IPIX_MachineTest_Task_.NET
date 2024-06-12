@@ -1,0 +1,91 @@
+body {
+  font-family: verdana;
+  margin-left: 30px;
+}
+
+h1 {
+  color: #3A3B3C;
+  font-weight: 150;
+}
+
+label {
+  color: #555D50;
+  font-weight: bold;
+}
+
+.span {
+  color: red;
+  font-weight: bold;
+}
+
+#first {
+  color: #555D50;
+}
+#last {
+  color: #555D50;
+  margin-left: 200px;
+}
+
+#firstname,
+#lastname {
+  border: 1px solid grey;
+  border-radius: 2px;
+  height: 35px;  
+  margin-top: 10px;
+  width: 222px;  
+}
+
+#username,
+#email,
+#password {
+  border: 1px solid grey;
+  border-radius: 2px;
+  height: 35px; 
+  margin-top: 10px;
+  width: 455px;
+}
+
+#phone {
+  border: 1px solid grey;
+  border-radius: 2px;
+  height: 35px; 
+  margin-top: 10px;
+  width: 460px;
+}
+
+#bio {
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+p {
+  color: #3A3B3C;
+}
+
+.submit {
+  color: #3A3B3C;
+  font-size: 16px;
+  height: 40px;
+  width: 100px;
+}
+
+.popup {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  display: none;
+  left: 50%; 
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+button {
+  color: black;
+  font-size: 16px;
+  height: 40px;
+  margin-right: 20px;
+  width: auto;
+}

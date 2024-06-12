@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="./phone/css/intlTelInput.css" />
+</head>
+<body>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script type="text/javascript" src="./phone/js/intlTelInput.js"></script>
+	<h1>Register</h1>
+	<form id="myForm">
+		<label for="name">Name</label><span class="span"> *</span><br>
+		<input type="text" id="firstname" name="firstname" Onblur="strValidate(this.value)">
+		<input type="text" id="lastname" name="lastname" Onblur="strValidate(this.value)"><br>
+		<span id="first">First</span><span id="last">Last</span>
+		<br><br>
+
+		<label for="username">Usename</label><span class="span"> *</span><br>
+		<input type="text" id="username" name="username" Onblur="checkUsename(this.value)"><br><br>
+
+		<label for="email">Email</label><span class="span"> *</span><br>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="phone">Phone</label><br>
+		<input type="tel" id="phone" name="phone" required><br><br>
+
+		<label for="password">Password</label><span class="span"> *</span><br>
+		<input type="password" id="password" name="password" Onblur="checkPassword(this.value)"><br><br>
+
+		<label for="bio">Short Bio</label><br>
+		<textarea id="bio" name="bio" rows="4" cols="60"></textarea>
+		<p>Share a little information about yourself.</p><br>
+
+		<button type="button" class="submit" onclick="validateForm()">Submit</button>
+	</form>
+	<script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        utilsScript: "./phone/js/utils.js"
+      });
+    </script>
+	<div id="popup" class="popup"></div>
+</body>
+</html>
